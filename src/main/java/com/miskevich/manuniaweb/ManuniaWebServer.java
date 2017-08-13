@@ -9,8 +9,9 @@ public class ManuniaWebServer {
         while (true) {
             DirectoryScanner directoryScanner = new DirectoryScanner();
             String warFileName = directoryScanner.scanDirectoryForNewWars();
-            Unzipper unzipper = new Unzipper();
-            unzipper.unzip(warFileName);
+            Unzipper unzipper = new Unzipper(warFileName);
+            unzipper.unzip();
+            unzipper.findWebXml();
         }
     }
 }
