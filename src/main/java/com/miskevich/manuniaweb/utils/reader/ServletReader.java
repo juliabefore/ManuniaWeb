@@ -5,5 +5,5 @@ import com.miskevich.manuniaweb.ServletDefinition;
 import java.util.List;
 
 public interface ServletReader {
-    List<ServletDefinition> getServlets(String Path);
+    List<ServletDefinition> getServlets(String path);
 }
